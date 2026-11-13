@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hanamanth Kuri | Java Full Stack Developer</title>
+<meta name="description" content="Portfolio of Hanamanth Kuri, Java and Spring Boot backend developer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="glow g1" aria-hidden="true"></div><div class="glow g2" aria-hidden="true"></div>
+<header class="nav" id="nav">
+  <a href="#home" class="logo">HK</a>
+  <nav id="menu" aria-label="Main">
+    <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a>
+    <a href="#experience">Experience</a><a href="#education">Education</a><a href="#achievements">Achievements</a>
+    <a href="#github">GitHub</a><a href="#contact">Contact</a>
+  </nav>
+  <button class="icon-btn" id="themeBtn" aria-label="Toggle dark and light mode">◐</button>
+  <button class="icon-btn burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">☰</button>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-text">
+    <p class="muted">Hi, I'm Hanamanth Kuri</p>
+    <h1>Java Full Stack Developer</h1>
+    <p class="type">I'm a <span id="typed"></span><span class="caret"></span></p>
+    <p class="lead">Building reliable backend applications and interactive web experiences. Final-year MCA student focused on Java, Spring Boot and REST APIs.</p>
+    <div class="btns">
+      <a class="btn primary" href="#projects">View projects</a>
+      <a class="btn" href="assets/resume/Hanamanth-Kuri-Resume.pdf" download="Hanamanth-Kuri-Resume.pdf">Download resume</a>
+      <a class="btn" href="#contact">Contact me</a>
+      <a class="btn ghost" href="https://github.com/Hanamanthkuri" target="_blank" rel="noopener">GitHub profile</a>
+    </div>
+  </div>
+  <div class="hero-img glass"><img src="assets/images/profile.png" alt="Profile placeholder for Hanamanth Kuri" width="300" height="300"></div>
+</section>
+
+<section id="about" class="sec reveal">
+  <h2>About me</h2>
+  <div class="glass about">
+    <p>I'm a final-year Master of Computer Applications student at Amity University Bengaluru. I enjoy building backend applications with Java and Spring Boot, with a solid grounding in object-oriented programming, REST APIs, JPA, Hibernate, JDBC, MySQL and SQL.</p>
+    <p>I've built a banking web application with Spring Boot and MySQL, and full-stack projects in Next.js and JavaScript. I'm looking for Java Developer and Backend Developer internships and entry-level roles where I can contribute, learn and grow.</p>
+    <div class="stats">
+      <div><b id="cRepos">–</b><span>public repositories</span></div>
+      <div><b>3rd</b><span>Web Astra 2026</span></div>
+      <div><b>8.20</b><span>MCA CGPA, 2nd sem</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="sec reveal"><h2>Technical skills</h2><div class="grid" id="skillGrid"></div></section>
+
+<section id="projects" class="sec reveal">
+  <h2>Projects</h2>
+  <div class="filters" id="filters" role="group" aria-label="Filter projects"></div>
+  <div class="grid cards" id="projectGrid"></div>
+</section>
+
+<section id="experience" class="sec reveal">
+  <h2>Experience</h2>
+  <article class="glass">
+    <h3>MERN Stack Development Intern</h3>
+    <p class="muted">Softmusk Info Pvt. Ltd., Belagavi, Karnataka · April 2024 – May 2024</p>
+    <ul>
+      <li>Completed a MERN Stack Development internship, gaining practical exposure to full-stack web application development.</li>
+      <li>Worked on an organizational project and gained experience with web application development practices in a professional environment.</li>
+    </ul>
+  </article>
+</section>
+
+<section id="education" class="sec reveal">
+  <h2>Education</h2>
+  <ol class="timeline">
+    <li><h3>MCA, Amity University Bengaluru</h3><p class="muted">2026 – Ongoing</p><p>CGPA 8.20 (2nd semester)</p></li>
+    <li><h3>BCA, Basaveshwar Science College, Belagavi</h3><p class="muted">2022 – 2025</p><p>CGPA 7.24 · Affiliated to Rani Channamma University, Belagavi</p></li>
+    <li><h3>PUC Science (PCMS), Basaveshwar Science College, Bagalkot</h3><p class="muted">2019 – 2021</p></li>
+  </ol>
+</section>
+
+<section id="achievements" class="sec reveal">
+  <h2>Achievements and certifications</h2>
+  <div class="grid two">
+    <article class="glass"><h3>Achievements</h3><ul>
+      <li>Secured 3rd place in Web Astra 2026, an intercollegiate web development competition at RV Institute of Technology and Management.</li>
+      <li>University Kabaddi player (2023). Represented Rani Channamma University, Belagavi at the All India South Zone Tournament.</li></ul></article>
+    <article class="glass"><h3>Certifications</h3><ul>
+      <li>MERN Stack Development Internship Certificate, Softmusk Info Pvt. Ltd.</li>
+      <li>NCC 'B' Certificate, 2023.</li></ul></article>
+  </div>
+</section>
+
+<section id="github" class="sec reveal">
+  <h2>GitHub activity</h2>
+  <div id="ghStatus" class="glass" role="status">Loading repositories…</div>
+  <div id="ghBody" hidden>
+    <div class="stats glass" id="ghStats"></div>
+    <h3>Languages</h3><div class="tags" id="ghLangs"></div>
+    <h3>Recently updated</h3><ul class="repos" id="ghRecent"></ul>
+  </div>
+  <p><a class="btn" href="https://github.com/Hanamanthkuri" target="_blank" rel="noopener">Open GitHub profile</a></p>
+</section>
+
+<section id="contact" class="sec reveal">
+  <h2>Contact</h2>
+  <div class="grid two">
+    <div class="glass contact-info">
+      <p><span class="muted">Email</span><br><a href="mailto:hanamanthkuri18@gmail.com">hanamanthkuri18@gmail.com</a></p>
+      <p><span class="muted">Phone</span><br><a href="tel:+916363460415">+91 6363460415</a></p>
+      <p><span class="muted">GitHub</span><br><a href="https://github.com/Hanamanthkuri" target="_blank" rel="noopener">github.com/Hanamanthkuri</a></p>
+      <p><span class="muted">Location</span><br>Karnataka, India</p>
+    </div>
+    <form class="glass" id="form" novalidate>
+      <label>Name<input id="fName" name="name" autocomplete="name"><small class="err"></small></label>
+      <label>Email<input id="fEmail" name="email" type="email" autocomplete="email"><small class="err"></small></label>
+      <label>Subject<input id="fSubject" name="subject"><small class="err"></small></label>
+      <label>Message<textarea id="fMsg" name="message" rows="5"></textarea><small class="err"></small></label>
+      <button class="btn primary" type="submit">Open in email app</button>
+      <p class="muted note" id="formNote">This opens your email app with the message filled in. Nothing is sent to a server.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>© <span id="year"></span> Hanamanth Kuri</footer>
+<button class="icon-btn top" id="topBtn" aria-label="Scroll to top" hidden>↑</button>
+
+<div class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="mTitle">
+  <div class="glass modal-box">
+    <button class="icon-btn close" id="mClose" aria-label="Close">✕</button>
+    <h3 id="mTitle"></h3><p id="mDesc"></p>
+    <h4>Features</h4><ul id="mFeat"></ul>
+    <div class="tags" id="mTags"></div>
+    <a class="btn primary" id="mLink" target="_blank" rel="noopener">View on GitHub</a>
+  </div>
+</div>
+
+<script src="js/projects.js"></script>
+<script src="js/github.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
